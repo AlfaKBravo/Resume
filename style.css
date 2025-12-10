@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef1f5;
+    color: #1f1f1f;
+    line-height: 1.7;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2b4c7e, #1f3e66);
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    opacity: 0.95;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+    margin-top: 18px;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    background: #d5d5d5;
+}
+
+/* Sections */
+.section {
+    background: #ffffff;
+    padding: 28px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section h2 {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    color: #2f4f70;
+    border-bottom: 2px solid #dde3ea;
+    padding-bottom: 6px;
+}
+
+.section ul {
+    margin-left: 25px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    color: #2b4c7e;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    background: #1f3e66;
+    color: #fff;
+    font-size: 0.9rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* -------------------- DARK MODE -------------------- */
+
+.dark-mode {
+    background: #0d1117;
+    color: #d1d5db;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+}
+
+.dark-mode .section {
+    background: #161b22;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode footer {
+    background: #000;
+}
+
+.dark-mode #themeToggle {
+    background: #30363d;
+    color: #e6e6e6;
+}
+
+.dark-mode #themeToggle:hover {
+    background: #3d444c;
+}
+
+.dark-mode .section h2,
+.dark-mode .item h3 {
+    color: #8ab4f8;
+}
